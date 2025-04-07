@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de CEP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Consulta de Endereço por CEP</h2>
+    
+    <div class="form-group">
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" placeholder="Digite o CEP (somente números)" maxlength="9">
+    </div>
+    
+    <button type="button" class="button" onclick="buscarCEP()">
+      <span id="loading" class="loading"></span>
+      Buscar Endereço
+    </button>
+    
+    <div id="status" class="status"></div>
+
+    <div id="resultado" style="margin-top: 25px; display: none;">
+      <div class="form-group">
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" readonly>
+      </div>
+      
+      <div class="form-group">
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" readonly>
+      </div>
+      
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" readonly>
+      </div>
+      
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" readonly>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

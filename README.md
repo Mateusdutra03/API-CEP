@@ -72,4 +72,4 @@ Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e dis
 
 ## Autor
 
-[Seu Nome] - [Seu Email/Website]
+Mateus Dutra Rezende  - https://digitalquanta.com.br
